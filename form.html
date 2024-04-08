@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./form.css">
+  <title>質問・感想フォーム</title>
+</head>
+<body>
+  <h1>質問・感想フォーム</h1>
+  <div class="container">
+    <form action="./form.html"  method="post">
+      <p>氏名</p>
+      <p><input type="text" name="name" id="name"></p>
+      <p>性別</p>
+      <p>
+        <span class="border"><input type="radio" id="man" name="gender" value="男" checked><label for="man">男</label></span>
+        <span class="border"><input type="radio" id="women" name="gender" value="女"><label for="women">女</label></span>
+      </p>
+      <p>年齢</p>
+      <p>
+        <select name="age" id="age">
+          <option value="10">10代</option>
+          <option value="20">20代</option>
+          <option value="30">30代</option>
+          <option value="40">40代</option>
+          <option value="50">50代</option>
+          <option value="60">60代</option>
+        </select>
+      </p>
+      <p>今後見てみたいレシピ</p>
+      <p>
+        <span class="border"><input type="checkbox" name="washoku" id="washoku"><label for="washoku">和食</label></span>
+        <span class="border"><input type="checkbox" name="chuuka" id="chuuka"><label for="chuuka">中華</label></span>
+        <span class="border"><input type="checkbox" name="youshoku" id="youshoku"><label for="youshoku">洋食</label></span>
+        <span class="border"><input type="checkbox" name="italian" id="italian"><label for="italian">イタリアン</label></span>
+        <span class="border"><input type="checkbox" name="sweets" id="sweets"><label for="sweets">スイーツ</label></span>
+        <span class="border"><input type="checkbox" name="other" id="other"><label for="other">その他</label></span>
+      </p>
+      <p>自由コメント欄</p>
+      <textarea name="text" id="comment" cols="35" rows="4">自由に意見を記述してください</textarea>
+      <br>
+      <button type="submit">送信</button>
+      <button type="reset">取り消し</button>
+    </form>
+  </div>
+</body>
+</html>
